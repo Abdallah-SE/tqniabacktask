@@ -2,6 +2,9 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\API\V1\shows\ShowController;
+use App\Http\Controllers\API\V1\venues\VenueController;
+use App\Http\Controllers\API\V1\artists\ArtistController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +17,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+
+Route::prefix('v1')->group(function () { // prfixed /v1 for routes within the group -> artists, venues and shows
+    Route::apiResource('artists', ArtistController::class);
+    Route::apiResource('venues', VenueController::class);
+    Route::apiResource('shows', ShowController::class);
 });
