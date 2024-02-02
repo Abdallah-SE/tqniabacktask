@@ -47,7 +47,7 @@ class ArtistController extends Controller
         ]);
         $artist->save();
 
-        if ($request->file('image') != null) {
+        if ($request->has('image')) {
             $path = $this->imageHandler->upload($request->file('image'), 'artists/' . $artist->id);
             $artist->image_url = $path;
             $artist->save();

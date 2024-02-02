@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\V1\shows\ShowController;
 use App\Http\Controllers\API\V1\venues\VenueController;
+use App\Http\Controllers\API\V1\Search\SearchController;
 use App\Http\Controllers\API\V1\artists\ArtistController;
 
 /*
@@ -22,4 +23,6 @@ Route::prefix('v1')->group(function () { // prfixed /v1 for routes within the gr
     Route::apiResource('artists', ArtistController::class);
     Route::apiResource('venues', VenueController::class);
     Route::apiResource('shows', ShowController::class);
+    Route::get('search', [SearchController::class, 'index'])
+        ->name('search.index');
 });
