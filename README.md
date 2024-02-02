@@ -28,8 +28,8 @@ To get started with the project, follow these steps:
 - Additionally, users should be able to learn more about a specific artist or venue.
 
 ## Tech Stacks
-- Backend: PHP, Laravel, RESTful API
-- Database: PostgreSQL or MySQL
+- Backend: PHP 8.2.10-2ubuntu1 , Laravel Framework 10.43.0, RESTful API
+- Database: MySQL
 
 ## Working Functionalities
 The project includes the following working functionalities:
