@@ -53,9 +53,9 @@ To test the API endpoints, you can use a tool like Postman. Follow the steps bel
 To use the endpoint will make url variable in postman called url add the url of application
 http://127.0.0.1:8000/api/v1/
 
-1.create new artist the body request contain (name, bio, image) {{url}}artists
-2.detailed information about artist  {{url}}artists/{artist}
-3.create new venue the body request contain (name, location, capacity) {{url}}venues
-4.detailed information about venue using endpint {{url}}venues/{venue}
-5.create new show the body request contain (artist_id, venue_id, title, description, date){{url}}shows  
-6.searching for venues and artists with param query  using endpint  {{url}}search?query=venue
+1. create new artist the body request contain (name, bio, image) {{url}}artists
+2. detailed information about artist  {{url}}artists/{artist}
+3. create new venue the body request contain (name, location, capacity) {{url}}venues
+4. detailed information about venue using endpint {{url}}venues/{venue}
+5. create new show the body request contain (artist_id, venue_id, title, description, date){{url}}shows  
+6. searching for venues and artists with param query  using endpint  {{url}}search?query=venue
